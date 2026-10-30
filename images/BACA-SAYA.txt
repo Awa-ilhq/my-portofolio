@@ -1,0 +1,3 @@
+Taruh foto di folder ini:
+hero.jpg (foto lebar besar, bagian About me)
+p1.jpg, p2.jpg, p3.jpg (screenshot projek)

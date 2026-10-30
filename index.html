@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M. Awaudin Ilhaqqi — Portofolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,100..900,0..100,0..1&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+
+<header class="top">
+  <a class="logo" href="#about">Awaudin</a>
+  <nav><a class="bx" href="#about">About</a><a class="bx" href="#skills">Skills</a><a class="bx" href="#projek">Projek</a></nav>
+  <div class="cta"><a class="bx" href="#">CV</a><a class="bx" href="#kontak">Kontak</a></div>
+</header>
+
+<section class="hero" id="about">
+  <h1 class="shadow">about me</h1>
+</section>
+
+<section class="story">
+  <h2 class="red">Cerita Saya</h2>
+  <div class="tiny">
+    <p>saya mengerjakan flutter web, html, css, dan javascript, serta terus menjelajah data science, cloud, dan generative ai.</p>
+    <p>saya percaya antarmuka yang baik dibangun dengan kode yang rapi, teruji, dan mudah dirawat.</p>
+  </div>
+  <div class="big reveal">
+    <p>saya m. awaudin ilhaqqi, frontend &amp; software developer yang senang membangun antarmuka web modern.</p>
+    <p>mahasiswa d3 teknologi informasi di politeknik negeri madiun. saya belajar lewat projek nyata, dari magang hingga aplikasi sendiri seperti temukan kopi.</p>
+  </div>
+  <div class="foot"><span>d3 ti · poltek madiun</span><span>dari malang, dengan ♥</span></div>
+</section>
+
+<section class="skills" id="skills">
+  <p class="lead reveal">tools yang sehari-hari saya pakai untuk membangun</p>
+  <div class="huge reveal">skills</div>
+  <div class="mission reveal">misiku: membuat web yang indah, cepat, dan mudah dipakai.</div>
+  <div class="badges reveal">
+    <span class="badge"><img src="https://cdn.simpleicons.org/laravel/000" alt="" onerror="this.remove()">Laravel</span>
+    <span class="badge"><img src="https://cdn.simpleicons.org/flutter/000" alt="" onerror="this.remove()">Flutter</span>
+    <span class="badge"><img src="https://cdn.simpleicons.org/php/000" alt="" onerror="this.remove()">PHP</span>
+    <span class="badge"><img src="https://cdn.simpleicons.org/javascript/000" alt="" onerror="this.remove()">JavaScript</span>
+    <span class="badge"><img src="https://cdn.simpleicons.org/react/000" alt="" onerror="this.remove()">React</span>
+    <span class="badge"><img src="https://cdn.simpleicons.org/nodedotjs/000" alt="" onerror="this.remove()">Node.js</span>
+    <span class="badge"><img src="https://cdn.simpleicons.org/python/000" alt="" onerror="this.remove()">Python</span>
+    <span class="badge"><img src="https://cdn.simpleicons.org/openjdk/000" alt="" onerror="this.remove()">Java</span>
+    <span class="badge">Generative AI</span>
+    <span class="badge">RAG</span>
+    <span class="badge">Data Science</span>
+    <span class="badge">Software Architecture</span>
+    <span class="badge">OOP</span>
+    <span class="badge"><img src="https://cdn.simpleicons.org/microsoftazure/000" alt="" onerror="this.remove()">Microsoft Azure</span>
+    <span class="badge"><img src="https://cdn.simpleicons.org/amazonaws/000" alt="" onerror="this.remove()">AWS</span>
+    <span class="badge">Microsoft Fabric</span>
+    <span class="badge">Cloud Computing</span>
+    <span class="badge"><img src="https://cdn.simpleicons.org/html5/000" alt="" onerror="this.remove()">HTML5</span>
+    <span class="badge"><img src="https://cdn.simpleicons.org/css/000" alt="" onerror="this.remove()">CSS3</span>
+    <span class="badge"><img src="https://cdn.simpleicons.org/mysql/000" alt="" onerror="this.remove()">MySQL</span>
+    <span class="badge"><img src="https://cdn.simpleicons.org/git/000" alt="" onerror="this.remove()">Git</span>
+    <span class="badge"><img src="https://cdn.simpleicons.org/visualstudiocode/000" alt="" onerror="this.remove()">VS Code</span>
+  </div>
+  <p class="hello" id="kontak">say hello: <a href="mailto:halo@emailkamu.com">halo@emailkamu.com</a></p>
+</section>
+
+<section class="projek" id="projek">
+  <h2 class="red">Projek</h2>
+  <div class="grid" id="projectGrid"></div>
+  <div class="more"><button class="bx" id="toggleBtn" type="button">Lihat semua</button></div>
+  <p class="copy">© 2026 m. awaudin ilhaqqi · github.com/Awa-ilhq</p>
+</section>
+
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="mTitle">
+    <button class="bx modal-x" id="modalClose" type="button" aria-label="Tutup">✕</button>
+    <div class="modal-img" id="mImg"></div>
+    <div class="modal-body">
+      <h3 id="mTitle"></h3>
+      <p id="mDesc"></p>
+      <div class="tags" id="mTags"></div>
+      <div class="modal-links" id="mLinks"></div>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
