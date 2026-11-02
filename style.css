@@ -16,7 +16,7 @@ a{color:inherit}
 .hero::before{content:"";position:absolute;inset:0;background:rgba(222,170,90,.22);mix-blend-mode:multiply}
 .shadow{position:relative;margin:-120px 0 0;font-size:clamp(56px,11vw,120px);font-weight:900;color:var(--cream);text-shadow:4px 4px 0 var(--red);letter-spacing:-.01em;will-change:transform}
 /* story */
-.story{position:relative;padding:72px var(--px) 64px;display:grid;grid-template-columns:1fr 1.4fr;gap:24px 64px;align-items:start}
+.story{position:relative;padding:72px var(--px) 64px;display:grid;grid-template-columns:1fr 1.4fr;gap:24px 64px;align-items:start;background:linear-gradient(rgba(244,233,210,.85),rgba(244,233,210,.85)),url(images/cerita.jpg) center/cover}
 .story-head{grid-column:1}
 .kicker{display:block;margin-bottom:14px;font-size:12px;letter-spacing:.12em;text-transform:uppercase}
 .story-head .red{font-size:clamp(44px,7vw,88px);line-height:.95}
