@@ -6,17 +6,17 @@ a{color:inherit}
 .page{max-width:none;margin:0;background:var(--cream);position:relative;overflow:hidden}
 .page::after{content:"";position:absolute;inset:0;pointer-events:none;mix-blend-mode:multiply;opacity:.16;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.8' numOctaves='2'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='.6'/%3E%3C/svg%3E")}
 /* header */
-.top{display:flex;align-items:center;justify-content:space-between;padding:26px var(--px);position:sticky;top:0;z-index:20;background:var(--cream)}
+.top{display:flex;align-items:center;justify-content:space-between;margin-bottom:-10px;padding:26px var(--px);position:sticky;top:0;z-index:20;background:linear-gradient(rgba(244,233,210,.55),rgba(244,233,210,.55)),url(images/cerita.jpg) center/cover;clip-path:polygon(0 0,100% 0,100% 92%,96% 96%,91% 91%,86% 98%,81% 92%,75% 97%,69% 90%,63% 98%,57% 92%,51% 97%,45% 90%,39% 98%,33% 91%,27% 97%,21% 90%,15% 98%,9% 92%,4% 97%,0 92%)}
 .logo{font-family:'Pacifico',cursive;font-size:30px;text-decoration:none;color:var(--red)}
 .top nav,.cta{display:flex;gap:6px}
 .bx{display:inline-block;padding:8px 16px;border:2px solid var(--red);background:var(--cream);box-shadow:2px 2px 0 var(--red);font-size:12px;letter-spacing:.04em;text-transform:uppercase;text-decoration:none;transition:transform .12s,box-shadow .12s}
 .bx:hover,.bx.on{transform:translate(2px,2px);box-shadow:0 0 0 var(--red);background:var(--red);color:var(--cream)}
 /* hero */
-.hero{height:calc(100vh - 90px);min-height:520px;margin-top:-8px;position:relative;display:grid;place-items:center;background:url(images/hero.jpg) center/cover,linear-gradient(#b9c7b0,#7f9a88 55%,#5b7a64);clip-path:polygon(0 3%,4% 1%,8% 3%,13% 0,19% 2%,25% .5%,31% 3%,38% 1%,44% 2.5%,51% 0,58% 2%,64% .5%,71% 3%,78% 1%,85% 2.5%,92% .5%,100% 2%,100% 98%,94% 99.5%,88% 97.5%,81% 99%,74% 97.5%,67% 99.5%,60% 98%,52% 99.5%,45% 97.5%,37% 99%,30% 98%,22% 99.5%,15% 97.5%,8% 99%,0 98%)}
+.hero{height:calc(100vh - 90px);min-height:520px;margin-top:-8px;position:relative;display:grid;place-items:center;background:url(images/hero.jpg) center/cover,linear-gradient(#b9c7b0,#7f9a88 55%,#5b7a64)}
 .hero::before{content:"";position:absolute;inset:0;background:rgba(222,170,90,.22);mix-blend-mode:multiply}
 .shadow{position:relative;margin:-120px 0 0;font-size:clamp(56px,11vw,120px);font-weight:900;color:var(--cream);text-shadow:4px 4px 0 var(--red);letter-spacing:-.01em;will-change:transform}
 /* story */
-.story{position:relative;padding:72px var(--px) 64px;display:grid;grid-template-columns:1fr 1.4fr;gap:24px 64px;align-items:start;background:linear-gradient(rgba(244,233,210,.55),rgba(244,233,210,.55)),url(images/cerita.jpg) center/cover}
+.story{position:relative;margin-top:-18px;padding:90px var(--px) 64px;display:grid;grid-template-columns:1fr 1.4fr;gap:24px 64px;align-items:start;background:linear-gradient(rgba(244,233,210,.55),rgba(244,233,210,.55)),url(images/cerita.jpg) center/cover;clip-path:polygon(0 12px,5% 6px,11% 13px,17% 3px,23% 11px,30% 5px,36% 14px,43% 4px,50% 12px,57% 5px,64% 13px,71% 3px,78% 11px,85% 5px,92% 13px,97% 4px,100% 9px,100% 100%,0 100%)}
 .story-head{grid-column:1}
 .kicker{display:block;margin-bottom:14px;font-size:12px;letter-spacing:.12em;text-transform:uppercase}
 .story-head .red{font-size:clamp(44px,7vw,88px);line-height:.95}
