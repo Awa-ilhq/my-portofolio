@@ -43,23 +43,26 @@ a{color:inherit}
 .badge:nth-child(4n+2) img,.badge:nth-child(4n) img{filter:invert(1)}
     .hello{margin:48px 0 0 50%;font-size:12px}
 /* projek */
-.projek{padding:56px var(--px) 28px}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:32px}
-.card{cursor:pointer;animation:pop .45s both}
-.card:hover .ph{transform:translate(-3px,-3px);box-shadow:6px 6px 0 var(--red)}
+.projek{position:relative;padding:64px var(--px) 40px;background:linear-gradient(rgba(244,233,210,.86),rgba(244,233,210,.86)),url(images/cerita.jpg) center/cover}
+.projek>h2{width:fit-content;margin:0 auto;color:var(--red);font-size:clamp(38px,6vw,68px);line-height:1;text-align:center;text-transform:uppercase;text-shadow:2px 2px 0 var(--orange)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px 26px;margin-top:42px;counter-reset:project}
+.card{position:relative;padding:14px 14px 12px;border:2px solid var(--red);background:rgba(244,233,210,.96);box-shadow:5px 5px 0 rgba(31,58,45,.35);cursor:pointer;counter-increment:project;animation:pop .45s both}
+.card:hover{box-shadow:7px 7px 0 rgba(31,58,45,.45)}
+.card:hover .ph{transform:translate(-2px,-2px);box-shadow:4px 4px 0 var(--red)}
 .card:focus-visible{outline:3px dashed var(--red);outline-offset:6px}
-.card h3{margin:14px 0 4px;font-size:22px;font-weight:900}
-.card p{margin:0 0 10px;font-size:13px;line-height:1.15}
+.card h3{margin:18px 0 6px;font-size:22px;font-weight:900;text-transform:uppercase}
+.card p{margin:0 0 12px;font-size:13px;line-height:1.25}
 .ph,.modal-img{border:3px solid var(--red);background-color:var(--rust);background-image:var(--img,none),var(--g);background-size:cover;background-position:center;transition:transform .15s,box-shadow .15s}
-.ph{height:220px}
+.ph{height:220px;border:5px solid var(--cream);outline:1px solid var(--red);filter:sepia(.14) saturate(.9)}
 .g0{--g:linear-gradient(135deg,#d9b36a,#c9503a)}
 .g1{--g:linear-gradient(135deg,#8fa48f,#1f3a2d)}
 .g2{--g:linear-gradient(135deg,#e9a23b,#cd5233)}
 .g3{--g:linear-gradient(135deg,#c9503a,#1f3a2d)}
 .tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;font-size:11px}
 .tags span{padding:3px 9px;border:1.5px solid var(--red);border-radius:99px}
+.projek .tags span{border-radius:0;background:var(--cream);box-shadow:1px 1px 0 var(--orange);font-size:10px;letter-spacing:.04em;text-transform:uppercase}
 button.bx{font-family:inherit;font-weight:800;color:var(--red);cursor:pointer}
-.more{display:flex;justify-content:center;margin-top:40px}
+.more{display:flex;justify-content:center;margin-top:44px}
 .more .bx{padding:12px 28px;font-size:13px}
 @keyframes pop{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
 /* pop up */
